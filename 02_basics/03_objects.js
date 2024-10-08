@@ -3,6 +3,7 @@
 
 // object literals
 
+// symbol has a special syntax
 const mySym = Symbol("key1")
 
 

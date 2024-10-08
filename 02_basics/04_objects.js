@@ -68,6 +68,8 @@ const {courseInstructor: instructor} = course
 // console.log(courseInstructor);
 console.log(instructor);
 
+// props are like objects we destruct what we need self 
+
 // {
 //     "name": "hitesh",
 //     "coursename": "js in hindi",
