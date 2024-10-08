@@ -31,14 +31,14 @@ let stringNumber = String(someNumber)
 
 let value = 3
 let negValue = -value
-// console.log(negValue);
+// console.log(negValue); // done
 
-// console.log(2+2);
-// console.log(2-2);
-// console.log(2*2);
-// console.log(2**3);
-// console.log(2/3);
-// console.log(2%3);
+// console.log(2+2); // done 
+// console.log(2-2); // done
+// console.log(2*2); // done
+// console.log(2**3); // power done 
+// console.log(2/3); // double divide
+// console.log(2%3); // modulo
 
 let str1 = "hello"
 let str2 = " hitesh"
@@ -47,14 +47,16 @@ let str3 = str1 + str2
 // console.log(str3);
 
 // console.log("1" + 2);
-// console.log(1 + "2");
-// console.log("1" + 2 + 2);
-// console.log(1 + 2 + "2");
+// console.log( typeof ( 1 + 2 + "2"));
 
-// console.log( (3 + 4) * 5 % 3);
+// // console.log(1 + "2");
+// console.log("1" + 2 + 2); // 122 string shayad left to right read karte jao
+// console.log(1 + 2 + "2"); // 32 string 
 
-// console.log(+true);
-// console.log(+"");
+// // console.log( (3 + 4) * 5 % 3);
+
+console.log(+true);
+console.log(+"");
 
 let num1, num2, num3
 

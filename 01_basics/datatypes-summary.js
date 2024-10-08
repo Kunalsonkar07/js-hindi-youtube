@@ -26,11 +26,11 @@ const heros = ["shaktiman", "naagraj", "doga"];
 let myObj = {
     name: "hitesh",
     age: 22,
-}
+} // object 
 
 const myFunction = function(){
     console.log("Hello world");
-}
+} // function dataype ( functinal datatype)
 
 console.log(typeof anotherId);
 
