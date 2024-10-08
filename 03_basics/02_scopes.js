@@ -31,11 +31,13 @@ function one(){
 
 if (true) {
     const username = "hitesh"
+    // let website ;
     if (username === "hitesh") {
         const website = " youtube"
         // console.log(username + website);
     }
-    // console.log(website);
+    // console.log(website); // ye error dega ki undefineed hai matlab variable he nahi hai 
+    // par agara let website hota toh ye dekt nahi aata
 }
 
 // console.log(username);
@@ -53,6 +55,10 @@ function addone(num){
 
 
 addTwo(5)
+// console.log(addTwo(5));
+// ye variable abhi tak declare ye nahi hua function toh start mai ye aagaya par usska 
+// varibale assign nahi hua tha
+
 const addTwo = function(num){
     return num + 2
 }

@@ -68,3 +68,5 @@ function returnSecondValue(getArray){
 
 // console.log(returnSecondValue(myNewArray));
 console.log(returnSecondValue([200, 400, 500, 1000]));
+
+// ***** you can see difference in global scope in node and virutal machine......
