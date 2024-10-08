@@ -33,5 +33,6 @@ const myFunction = function(){
 } // function dataype ( functinal datatype)
 
 console.log(typeof anotherId);
+// hello 
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
