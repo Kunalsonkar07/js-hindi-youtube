@@ -19,6 +19,9 @@
    </div>
 </body>
 <script>
+
+    // flase and true in eventlistner is bubbling or capuring parse
+
     // document.getElementById('owl').onclick = function(){
     //     alert("owl clicked")
     // }
@@ -46,7 +49,7 @@
     //     console.log("google clicked");
     // }, false)
    
-    
+    // parentNode for deleting li not only image
     document.querySelector('#images').addEventListener('click', function(e){
         console.log(e.target.tagName);
         if (e.target.tagName === 'IMG') {
