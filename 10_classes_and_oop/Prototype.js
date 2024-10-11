@@ -2,7 +2,7 @@
 // let mychannel = "chai     "
 
 // console.log(myName.trueLength);
-
+// this means kisne call keya or kis ke bare me baat ho rahi hai.....
 
 let myHeros = ["thor", "spiderman"]
 
