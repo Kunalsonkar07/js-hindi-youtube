@@ -15,8 +15,20 @@
         console.log(str, Date.now());
     }
 
-    const intervalId = setInterval(sayDate, 1000, "hi")
+    // const intervalId = setInterval(sayDate, 1000, "hi")
 
-    clearInterval(intervalId)
+    // clearInterval(intervalId)
+
+    const start = document.querySelector('#start') ;
+    const stop = document.querySelector('#stop') ;
+
+    stop.addEventListener('click' , () => {
+        clearInterval(intervalId) ;   
+    })
+
+    start.addEventListener('click' , () => {
+        intervalId = setInterval(sayDate, 1000, "hi")
+    })
+
 </script>
 </html>
