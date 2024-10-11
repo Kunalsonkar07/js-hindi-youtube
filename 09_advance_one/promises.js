@@ -1,3 +1,5 @@
+
+// normal promise
 const promiseOne = new Promise(function(resolve, reject){
     //Do an async task
     // DB calls, cryptography, network
@@ -11,6 +13,9 @@ promiseOne.then(function(){
     console.log("Promise consumed");
 })
 
+
+// async 2 passing resolve 
+
 new Promise(function(resolve, reject){
     setTimeout(function(){
         console.log("Async task 2");
@@ -20,6 +25,8 @@ new Promise(function(resolve, reject){
 }).then(function(){
     console.log("Async 2 resolved");
 })
+
+// promise 3 passing resolve with argument 
 
 const promiseThree = new Promise(function(resolve, reject){
     setTimeout(function(){
@@ -31,6 +38,8 @@ promiseThree.then(function(user){
     console.log(user);
 })
 
+
+// reject promise 4 
 const promiseFour = new Promise(function(resolve, reject){
     setTimeout(function(){
         let error = true
@@ -42,6 +51,7 @@ const promiseFour = new Promise(function(resolve, reject){
     }, 1000)
 })
 
+// chaining 
  promiseFour
  .then((user) => {
     console.log(user);
@@ -76,18 +86,19 @@ async function consumePromiseFive(){
 
 consumePromiseFive()
 
-// async function getAllUsers(){
-//     try {
-//         const response = await fetch('https://jsonplaceholder.typicode.com/users')
+async function getAllUsers(){
+    try {
+        const response = await fetch('https://jsonplaceholder.typicode.com/users')
+        // data convergent is also a await function we have to use await 
+        // const data =  response.json() wrong 
+        const data =  await response.json()
+        console.log(data);
+    } catch (error) {
+        console.log("E: ", error);
+    }
+}
 
-//         const data = await response.json()
-//         console.log(data);
-//     } catch (error) {
-//         console.log("E: ", error);
-//     }
-// }
-
-//getAllUsers()
+getAllUsers()
 
 fetch('https://api.github.com/users/hiteshchoudhary')
 .then((response) => {
